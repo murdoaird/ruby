@@ -1,4 +1,4 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
 
 one:
   title: MyString
@@ -11,3 +11,22 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+#START:ruby
+
+ruby: 
+  title:       Programming Ruby 1.9
+  description: 
+    Ruby is the fastest growing and most exciting dynamic
+    language out there.  If you need to get working programs
+    delivered fast, you should add Ruby to your toolbox.
+  price:       49.50
+  image_url:   ruby.png 
+#END:ruby
+
+pingx20: 
+  title:       Ping X20 irons
+  description: 
+    Regular lie, stiff shaft 3-SW inc U wedge
+  price:       801.99
+  image_url:   ping.png 
+#END:pingx20
