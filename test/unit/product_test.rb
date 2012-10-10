@@ -87,5 +87,21 @@ class ProductTest < ActiveSupport::TestCase
     assert_equal "has already been taken", product.errors[:image_url].join('; ')
   end
 
+  test "product title is less than 10 chars long" do
+    product = Product.new(title:       "xxxxxxxxx",
+                          description: "yyy", 
+                          price:       1, 
+                          image_url:   "zzz.png")
+    assert !product.save
+    assert_equal "is too short (minimum is 10 characters)", product.errors[:title].join('; ')
+  end
   
+  test "product title is 10 chars long" do
+    product = Product.new(title:       "xxxxxxxxxxx",
+                          description: "yyy", 
+                          price:       1, 
+                          image_url:   "zzz.png")
+    assert product.save
+    assert product.valid?
+  end      
 end
