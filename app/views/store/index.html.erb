@@ -2,6 +2,10 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
+<% if @view_count > 5 %>
+	<%= pluralize(@view_count, "time") %>
+<% end %>
+
 <h1>Your Pragmatic Catalog</h1>
 
 <% @products.each do |product| %>
@@ -11,6 +15,7 @@
     <%= sanitize(product.description) %>
     <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span>
+      <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
     </div>
   </div>
 <% end %>
