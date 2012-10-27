@@ -1,0 +1,49 @@
+/* START_HIGHLIGHT */
+/* line 7, ../../app/assets/stylesheets/products.css.scss */
+.products table {
+  border-collapse: collapse;
+}
+/* line 11, ../../app/assets/stylesheets/products.css.scss */
+.products table tr td {
+  padding: 5px;
+  vertical-align: top;
+}
+/* line 16, ../../app/assets/stylesheets/products.css.scss */
+.products .list_image {
+  width: 60px;
+  height: 70px;
+}
+/* line 21, ../../app/assets/stylesheets/products.css.scss */
+.products .list_description {
+  width: 60%;
+}
+/* line 23, ../../app/assets/stylesheets/products.css.scss */
+.products .list_description dl {
+  margin: 0;
+}
+/* line 27, ../../app/assets/stylesheets/products.css.scss */
+.products .list_description dt {
+  color: #244;
+  font-weight: bold;
+  font-size: larger;
+}
+/* line 33, ../../app/assets/stylesheets/products.css.scss */
+.products .list_description dd {
+  margin: 0;
+}
+/* line 38, ../../app/assets/stylesheets/products.css.scss */
+.products .list_actions {
+  font-size: x-small;
+  text-align: right;
+  padding-left: 1em;
+}
+/* line 44, ../../app/assets/stylesheets/products.css.scss */
+.products .list_line_even {
+  background: #e0f8f8;
+}
+/* line 48, ../../app/assets/stylesheets/products.css.scss */
+.products .list_line_odd {
+  background: #f8b0f8;
+}
+
+/* END_HIGHLIGHT */

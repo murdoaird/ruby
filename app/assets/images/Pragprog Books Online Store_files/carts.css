@@ -1,0 +1,13 @@
+/* line 2, ../../app/assets/stylesheets/carts.css.scss */
+.carts .cart_title, #side .cart_title, #cart .cart_title {
+  font: 120% bold;
+}
+/* line 6, ../../app/assets/stylesheets/carts.css.scss */
+.carts .item_price, .carts .total_line, #side .item_price, #side .total_line, #cart .item_price, #cart .total_line {
+  text-align: right;
+}
+/* line 10, ../../app/assets/stylesheets/carts.css.scss */
+.carts .total_line .total_cell, #side .total_line .total_cell, #cart .total_line .total_cell {
+  font-weight: bold;
+  border-top: 1px solid #595;
+}

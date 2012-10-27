@@ -1,0 +1,138 @@
+<!-- START:head -->
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- START_HIGHLIGHT -->
+  <title>Pragprog Books Online Store</title>
+<!-- END_HIGHLIGHT -->
+  <link href="Pragprog%20Books%20Online%20Store_files/application.css" media="screen" rel="stylesheet" type="text/css">
+<link href="Pragprog%20Books%20Online%20Store_files/carts.css" media="screen" rel="stylesheet" type="text/css">
+<link href="Pragprog%20Books%20Online%20Store_files/line_items.css" media="screen" rel="stylesheet" type="text/css">
+<link href="Pragprog%20Books%20Online%20Store_files/products.css" media="screen" rel="stylesheet" type="text/css">
+<link href="Pragprog%20Books%20Online%20Store_files/scaffolds.css" media="screen" rel="stylesheet" type="text/css">
+<link href="Pragprog%20Books%20Online%20Store_files/store.css" media="screen" rel="stylesheet" type="text/css"><!-- <label id="code.slt"/> -->
+  <script src="Pragprog%20Books%20Online%20Store_files/jquery.js" type="text/javascript"></script>
+<script src="Pragprog%20Books%20Online%20Store_files/jquery-ui.js" type="text/javascript"></script>
+<script src="Pragprog%20Books%20Online%20Store_files/jquery_ujs.js" type="text/javascript"></script>
+<script src="Pragprog%20Books%20Online%20Store_files/carts.js" type="text/javascript"></script>
+<script src="Pragprog%20Books%20Online%20Store_files/line_items.js" type="text/javascript"></script>
+<script src="Pragprog%20Books%20Online%20Store_files/products.js" type="text/javascript"></script>
+<script src="Pragprog%20Books%20Online%20Store_files/store.js" type="text/javascript"></script>
+<script src="Pragprog%20Books%20Online%20Store_files/application.js" type="text/javascript"></script><!-- <label id="code.jlt"/> -->
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="eNZneQs5FKXqi6Hix40dBqK0DTAHTpMVaCYrQpqDeEY=" name="csrf-token"><!-- <label id="code.csrf"/> -->
+</head>
+<!-- END:head -->
+<body class="store">
+<!-- START_HIGHLIGHT -->
+  <div id="banner">
+    <img alt="Logo" src="Pragprog%20Books%20Online%20Store_files/logo.png">
+    Pragmatic Bookshelf<!-- <label id="code.depot.e.title"/> -->
+  </div>
+  <div id="columns">
+    <div id="side">
+    	<div id="cart"><div class="cart_title">Your Cart</div>
+<table>
+<!-- START_HIGHLIGHT -->
+  <tbody><tr>
+	<td>1×</td>	
+	<td>Boo lot too grew</td>
+	<td class="item_price">$1.99</td>
+</tr>
+	
+<tr style="background-color: rgb(17, 68, 17);" id="current_item">
+	<td>3×</td>	
+	<td>CoffeeScript</td>
+	<td class="item_price">$108.00</td>
+</tr>
+	
+
+<!-- END_HIGHLIGHT -->
+
+  <tr class="total_line">
+    <td colspan="2">Total</td>
+<!-- START_HIGHLIGHT -->
+    <td class="total_cell">$109.99</td>
+<!-- END_HIGHLIGHT -->
+  </tr>
+
+</tbody></table>
+
+<!-- START_HIGHLIGHT -->
+<form action="/carts/6" class="button_to" method="post"><div><input name="_method" value="delete" type="hidden"><input data-confirm="Are you sure?" value="Empty cart" type="submit"><input name="authenticity_token" value="eNZneQs5FKXqi6Hix40dBqK0DTAHTpMVaCYrQpqDeEY=" type="hidden"></div></form>
+</div>
+      <ul>
+        <li><a href="http://localhost:3000/">Home</a></li>
+        <li><a href="http://www..../faq">Questions</a></li>
+        <li><a href="http://www..../news">News</a></li>
+        <li><a href="http://www..../contact">Contact</a></li>
+      </ul>
+      <p id="side_text">The current time is: 20:17 10/27/2012</p>
+    </div>
+    <div id="main">
+<!-- END_HIGHLIGHT -->
+      
+
+<h1>Your Pragmatic Catalog</h1>
+
+  <div class="entry">
+    <img alt="Doh" src="Pragprog%20Books%20Online%20Store_files/doh.html">
+    <h3>Boo lot too grew</h3>
+    Blah
+    <div class="price_line">
+      <span class="price">$1.99</span>
+      <form action="/line_items?product_id=7" class="button_to" data-remote="true" method="post"><div><input value="Add to Cart" type="submit"><input name="authenticity_token" value="eNZneQs5FKXqi6Hix40dBqK0DTAHTpMVaCYrQpqDeEY=" type="hidden"></div></form>
+    </div>
+  </div>
+  <div class="entry">
+    <img alt="Cs" src="Pragprog%20Books%20Online%20Store_files/cs.jpg">
+    <h3>CoffeeScript</h3>
+    <p>
+        CoffeeScript is JavaScript done right. It provides all of JavaScript's
+  functionality wrapped in a cleaner, more succinct syntax. In the first
+  book on this exciting new language, CoffeeScript guru Trevor Burnham
+  shows you how to hold onto all the power and flexibility of JavaScript
+  while writing clearer, cleaner, and safer code.
+      </p>
+    <div class="price_line">
+      <span class="price">$36.00</span>
+      <form action="/line_items?product_id=2" class="button_to" data-remote="true" method="post"><div><input value="Add to Cart" type="submit"><input name="authenticity_token" value="eNZneQs5FKXqi6Hix40dBqK0DTAHTpMVaCYrQpqDeEY=" type="hidden"></div></form>
+    </div>
+  </div>
+  <div class="entry">
+    <img alt="Ruby" src="Pragprog%20Books%20Online%20Store_files/ruby.jpg">
+    <h3>Programming Ruby 1.9</h3>
+    <p>
+        Ruby is the fastest growing and most exciting dynamic language
+        out there. If you need to get working programs delivered fast,
+        you should add Ruby to your toolbox.
+      </p>
+    <div class="price_line">
+      <span class="price">$49.95</span>
+      <form action="/line_items?product_id=3" class="button_to" data-remote="true" method="post"><div><input value="Add to Cart" type="submit"><input name="authenticity_token" value="eNZneQs5FKXqi6Hix40dBqK0DTAHTpMVaCYrQpqDeEY=" type="hidden"></div></form>
+    </div>
+  </div>
+  <div class="entry">
+    <img alt="Rtp" src="Pragprog%20Books%20Online%20Store_files/rtp.jpg">
+    <h3>Rails Test Prescriptions</h3>
+    <p>
+        <em>Rails Test Prescriptions</em> is a comprehensive guide to testing
+        Rails applications, covering Test-Driven Development from both a
+        theoretical perspective (why to test) and from a practical perspective
+        (how to test effectively). It covers the core Rails testing tools and
+        procedures for Rails 2 and Rails 3, and introduces popular add-ons,
+        including Cucumber, Shoulda, Machinist, Mocha, and Rcov.
+      </p>
+    <div class="price_line">
+      <span class="price">$34.95</span>
+      <form action="/line_items?product_id=4" class="button_to" data-remote="true" method="post"><div><input value="Add to Cart" type="submit"><input name="authenticity_token" value="eNZneQs5FKXqi6Hix40dBqK0DTAHTpMVaCYrQpqDeEY=" type="hidden"></div></form>
+    </div>
+  </div>
+<!-- <label id="code.depot.e.include"/> -->
+<!-- START_HIGHLIGHT -->
+    </div>
+  </div>
+<!-- END_HIGHLIGHT -->
+
+
+</body></html>
