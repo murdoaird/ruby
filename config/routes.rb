@@ -7,8 +7,12 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depot::Application.routes.draw do
-  resources :line_items
+  resources :orders
 
+  resources :line_items do
+    put 'decrement', on: :member
+  end
+  
   resources :carts
 
   get "store/index"
